@@ -1,0 +1,27 @@
+name: Feature request
+description: Suggest an improvement to Chatcode.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing requests first. If your idea is already listed, add a thumbs-up reaction or explain your use case there. Everything posted here is public.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe your use case and what is difficult today.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed improvement
+      description: Explain what you would like Chatcode to do.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds
+      description: Optional. What have you tried, or how do you handle this today?

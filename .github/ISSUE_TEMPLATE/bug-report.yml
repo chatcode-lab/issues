@@ -1,0 +1,55 @@
+name: Bug report
+description: Report something that is not working in Chatcode.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing issues before submitting. This report is public: remove credentials, private code, and personal data from logs and screenshots. For account-specific help or security vulnerabilities, email help@chatcode.dev.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and any error message you saw.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: What steps led to the problem? If it happens intermittently, explain when you notice it.
+      placeholder: |
+        1. Open ...
+        2. Select ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where does it happen?
+      options:
+        - Web app
+        - Telegram
+        - Gateway or terminal sessions
+        - Installation or updates
+        - Account or billing
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser, operating system, device, agent, and gateway version, if known.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs or screenshots
+      description: Optional. Share only the relevant excerpt or screenshot after removing private information.
